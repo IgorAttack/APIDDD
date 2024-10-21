@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Consulta DevFrontEnd DDD</title>
+
+</head>
+
+<body class="bg-black text-white">
+    <header>
+      <h1>Consulta de DDD</h1>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+          Mais Informações
+        </button>
+      </p>
+      <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+          <div class="card card-body bg-black text-white" style="width: 300px;">
+            <p>DDD significa Discagem Direta à Distância. É um sistema de ligação telefônica automática entre diferentes áreas urbanas nacionais. O DDD é um código constituído por 2 dígitos que identificam as principais cidades do país e devem ser adicionados ao nº de telefone, juntamente com o código da operadora.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+     <main class="flex-grow-1">
+        <div class="container mt-5">
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="dddInput" placeholder="Digite o DDD. Ex:11">
+                            <button type="button" class="btn btn-primary btn-lg" id="consultarBtn">Consultar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div id="resultado" class="mt-3"></div>
+        </div>
+    </main>
+
+    <script src="api_v2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
